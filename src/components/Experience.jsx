@@ -46,12 +46,12 @@ export const Experience = () => {
       {
         cameraRailDist: -1,
         position: new Vector3(
-          curvePoints[1].x - 3,
-          curvePoints[1].y + 4,
+          curvePoints[1].x - 7,
+          curvePoints[1].y + 7,
           curvePoints[1].z + 1
         ),
-        title: "Dari hati",
-        subtitle: `Dengan berat hati, saya harus mengucapkan salam perpisahan karena kondisi yang mengharuskan saya meninggalkan tempat ini. Bekerja bersama kalian selama ini adalah pengalaman yang sangat berharga, dan saya sangat bersyukur dapat menjadi bagian dari tim yang hebat. Saya akan selalu mengenang momen-momen kebersamaan kita, yang tak hanya dipenuhi dengan tantangan, tetapi juga dengan keceriaan dan dukungan satu sama lain.`,
+        title: "[phase]-Onboarding",
+        subtitle: `Saat bergabung dengan perusahaan ini adalah kebanggaan yang tak terlupakan. Saya hanyalah seorang pemuda dari Sulawesi yang merantau dengan tekad yang kuat, meninggalkan rumah tanpa seorang pun yang tahu. Hanya doa ibu yang mengantarkan saya di tanah Jawa ini. Awalnya cukup berat, namun seiring berjalannya waktu, saya menemukan keluarga baru di sini. Rekan-rekan kerja yang selalu mendukung dan lingkungan yang penuh semangat membuat saya semakin yakin bahwa keputusan untuk merantau adalah langkah yang tepat. Setiap tantangan yang dihadapi menjadi pelajaran berharga, dan setiap keberhasilan menjadi kebanggaan bersama. Perjalanan ini bukan hanya tentang pekerjaan, tetapi juga tentang pertumbuhan, persahabatan, dan pencapaian mimpi-mimpi besar.`
       },
       {
         cameraRailDist: -1,
