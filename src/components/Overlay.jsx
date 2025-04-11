@@ -17,7 +17,7 @@ export const Overlay = () => {
           <h4 className="logo">
             Rekan- Rekan Sekalian
           </h4>
-          <p className="intro__scroll">Scroll to begin the journey</p>
+          <p className="intro__scroll">Silakan di Scroll tapi pelan aja </p>
           <button
             className="explore"
             onClick={() => {
@@ -29,7 +29,7 @@ export const Overlay = () => {
         </div>
       )}
       <div className={`outro ${end ? "outro--appear" : ""}`}>
-        <p className="outro__text">Wish you had a great flight with us...</p>
+        <p className="outro__text">JASA SEDOT WC 081938983691 (Rohid-Stone-JAKA)</p>
       </div>
     </div>
   );
