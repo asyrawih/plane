@@ -14,10 +14,10 @@ import { TextSection } from "./TextSection";
 
 const LINE_NB_POINTS = 1000;
 const CURVE_DISTANCE = 250;
-const CURVE_AHEAD_CAMERA = 0.008;
-const CURVE_AHEAD_AIRPLANE = 0.02;
+const CURVE_AHEAD_CAMERA = 0.004;
+const CURVE_AHEAD_AIRPLANE = 0.01;
 const AIRPLANE_MAX_ANGLE = 35;
-const FRICTION_DISTANCE = 42;
+const FRICTION_DISTANCE = 62;
 
 export const Experience = () => {
   const curvePoints = useMemo(
@@ -50,8 +50,10 @@ export const Experience = () => {
           curvePoints[1].y + 7,
           curvePoints[1].z + 1
         ),
-        title: "[phase]-Onboarding",
-        subtitle: `Saat bergabung dengan perusahaan ini adalah kebanggaan yang tak terlupakan. Saya hanyalah seorang pemuda dari Sulawesi yang merantau dengan tekad yang kuat, meninggalkan rumah tanpa seorang pun yang tahu. Hanya doa ibu yang mengantarkan saya di tanah Jawa ini. Awalnya cukup berat, namun seiring berjalannya waktu, saya menemukan keluarga baru di sini. Rekan-rekan kerja yang selalu mendukung dan lingkungan yang penuh semangat membuat saya semakin yakin bahwa keputusan untuk merantau adalah langkah yang tepat. Setiap tantangan yang dihadapi menjadi pelajaran berharga, dan setiap keberhasilan menjadi kebanggaan bersama. Perjalanan ini bukan hanya tentang pekerjaan, tetapi juga tentang pertumbuhan, persahabatan, dan pencapaian mimpi-mimpi besar.`
+        title: "Hola ... ",
+        subtitle: `Terima kasih sudah sabar menahan kelakuan, Aku pamit, bukan karena kaya mendadak,
+Tapi mau cari kopi gratis di tempat baru,
+Jangan lupa traktir kalau kangen aku!`,
       },
       {
         cameraRailDist: -1,
@@ -60,39 +62,24 @@ export const Experience = () => {
           curvePoints[2].y + 4,
           curvePoints[2].z + 1
         ),
-        title: "Dari hati",
-        subtitle: `Dengan berat hati, saya harus mengucapkan salam perpisahan karena kondisi yang mengharuskan saya meninggalkan tempat ini. Bekerja bersama kalian selama ini adalah pengalaman yang sangat berharga, dan saya sangat bersyukur dapat menjadi bagian dari tim yang hebat. Saya akan selalu mengenang momen-momen kebersamaan kita, yang tak hanya dipenuhi dengan tantangan, tetapi juga dengan keceriaan dan dukungan satu sama lain.`,
-      },
-      {
-        cameraRailDist: 1.5,
-        position: new Vector3(
-          curvePoints[3].x + 2,
-          curvePoints[3].y,
-          curvePoints[3].z
-        ),
-        title: "Services",
-        subtitle: `Do you want a drink?
-We have a wide range of beverages!`,
+        title: "Terima Kasih",
+        subtitle: `Kerja bareng kalian rasanya campur aduk,
+Kayak es campur lupa dikasih sirup,
+Penuh tantangan, tawa, dan drama kecil,
+Nanti aku rindu, tapi rindu yang cukup. Tenang, aku pergi bukan karena diculik,
+Cuma mau upgrade skill dan jam tidur,
+Semoga kalian tetap kuat tanpa curhat,
+Kalau butuh gosip, tinggal kirim DM!`,
       },
       {
         cameraRailDist: -1,
         position: new Vector3(
-          curvePoints[4].x - 3,
-          curvePoints[4].y,
-          curvePoints[4].z
+          curvePoints[3].x - 7,
+          curvePoints[3].y + 7,
+          curvePoints[3].z + 1
         ),
-        title: "Fear of flying?",
-        subtitle: `Our flight attendants will help you have a great journey`,
-      },
-      {
-        cameraRailDist: 1.5,
-        position: new Vector3(
-          curvePoints[5].x + 3.5,
-          curvePoints[5].y,
-          curvePoints[5].z - 12
-        ),
-        title: "Movies",
-        subtitle: `We provide a large selection of medias, we highly recommend you Porco Rosso during the flight`,
+        title: "Tau aja butuh nomor SEDOT WC",
+        subtitle: `081938983691`
       },
     ];
   }, []);
@@ -184,88 +171,6 @@ We have a wide range of beverages!`,
           curvePoints[2].z - 86
         ),
         rotation: new Euler(Math.PI / 4, 0, Math.PI / 3),
-      },
-      // THIRD POINT
-      {
-        scale: new Vector3(3, 3, 3),
-        position: new Vector3(
-          curvePoints[3].x + 3,
-          curvePoints[3].y - 10,
-          curvePoints[3].z + 50
-        ),
-      },
-      {
-        scale: new Vector3(3, 3, 3),
-        position: new Vector3(
-          curvePoints[3].x - 10,
-          curvePoints[3].y,
-          curvePoints[3].z + 30
-        ),
-        rotation: new Euler(Math.PI / 4, 0, Math.PI / 5),
-      },
-      {
-        scale: new Vector3(4, 4, 4),
-        position: new Vector3(
-          curvePoints[3].x - 20,
-          curvePoints[3].y - 5,
-          curvePoints[3].z - 8
-        ),
-        rotation: new Euler(Math.PI, 0, Math.PI / 5),
-      },
-      {
-        scale: new Vector3(5, 5, 5),
-        position: new Vector3(
-          curvePoints[3].x + 0,
-          curvePoints[3].y - 5,
-          curvePoints[3].z - 98
-        ),
-        rotation: new Euler(0, Math.PI / 3, 0),
-      },
-      // FOURTH POINT
-      {
-        scale: new Vector3(2, 2, 2),
-        position: new Vector3(
-          curvePoints[4].x + 3,
-          curvePoints[4].y - 10,
-          curvePoints[4].z + 2
-        ),
-      },
-      {
-        scale: new Vector3(3, 3, 3),
-        position: new Vector3(
-          curvePoints[4].x + 24,
-          curvePoints[4].y - 6,
-          curvePoints[4].z - 42
-        ),
-        rotation: new Euler(Math.PI / 4, 0, Math.PI / 5),
-      },
-      {
-        scale: new Vector3(3, 3, 3),
-        position: new Vector3(
-          curvePoints[4].x - 4,
-          curvePoints[4].y + 9,
-          curvePoints[4].z - 62
-        ),
-        rotation: new Euler(Math.PI / 3, 0, Math.PI / 3),
-      },
-      // FINAL
-      {
-        scale: new Vector3(3, 3, 3),
-        position: new Vector3(
-          curvePoints[7].x + 12,
-          curvePoints[7].y - 5,
-          curvePoints[7].z + 60
-        ),
-        rotation: new Euler(-Math.PI / 4, -Math.PI / 6, 0),
-      },
-      {
-        scale: new Vector3(3, 3, 3),
-        position: new Vector3(
-          curvePoints[7].x - 12,
-          curvePoints[7].y + 5,
-          curvePoints[7].z + 120
-        ),
-        rotation: new Euler(Math.PI / 4, Math.PI / 6, 0),
       },
     ],
     []
